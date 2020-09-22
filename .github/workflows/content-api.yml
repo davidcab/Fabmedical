@@ -18,11 +18,11 @@ on:
 
 # Environment variables are defined so that they can be used throughout the job definitions.
 env:
- imageRepository: 'content-web'
+ imageRepository: 'content-api'
  resourceGroupName: 'fabmedical-224326'
  containerRegistryName: 'acr224326'
  containerRegistry: 'acr222326.azurecr.io'
- dockerfilePath: './content-web'
+ dockerfilePath: './content-api'
  tag: '${{ github.run_id  }}'
 
 # Jobs define the actions that take place when code is pushed to the master branch
